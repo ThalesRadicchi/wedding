@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+    font-family: "Playfair Display";
+}
+
+body {
+    padding: 0% 5%;
+    margin: auto;
+    margin-top: 0px;
+    max-width: 2500px;
+}
+
+.header{
+    height: 70px;
+    padding-right: 10%;
+}
+
+h1{
+    font-size: 64px;
+}
+
+h2{
+    font-size: 48px;
+}
+
+h3{
+    font-size: 32px;
+}
+
+h4{
+    font-size: 24px;
+}
+
+h5{
+    font-size: 16px;
+}
+
+.textBlue{
+    color: #5B77AA;
+}
+
+.textGreen{
+    color: #39D3D3; 
+}
+
+#textWhite{
+    color: #fff;
+}
+
+span.topButton {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 20px 15px 20px;
+    gap: 25px;
+}
+
+button{
+    border-radius: 15px 0px;
+    padding: 5px 15px 5px 15px ;
+    border: none;
+
+    color: #fff;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.default-button {
+    background: #6DD6D6;
+}
+
+.detach {
+    background: #DAA4FF;
+}
+
+.apresentation > img {
+    width: 100%;
+    max-height: 500px;
+}
+
+
+.presents {
+    padding: 5%;
+
+}
+
+.presents > div {
+    margin: auto;
+    text-align: center;
+
+}
+
+#priority, #no-priority{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 50px;
+    row-gap: 50px;
+
+    
+    justify-items: center;
+    margin: auto;
+    padding: 50px;
+    max-width: 1300px;
+}
+
+#priority {
+    background-color: #F5E5F2;
+    border-radius: 30px;
+}
+
+#priority > div > img, #no-priority > div > img {
+    width: 100px;
+    height: 150px;
+}
+
+#item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+#priority > #item {
+    border: #fff solid 2px;
+    border-radius: 30px;
+}
+
+#name-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px
+}
+
+#item-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+#item-buttons > h5 {
+    color: red;
+}
+
+#no-priority > #item {
+    border: #5B77AA solid 2px;
+    border-radius: 30px;
+}
+
+
+.listPresents{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    width: 100%;    
+    background: #AED8D8;
+    overflow: hidden;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text > div {
+    row-gap: 10px;  
+
+}
+
+.text > div > a > button {
+    width: 140px;
+    margin: 0% 3%;
+}
+
+
+#svg1, #svg2 {
+    position: absolute;
+    width: 30%;
+    height: 70%;
+}
+
+
+#svg1 {
+    top: -20px;
+    left: -100px;
+}
+
+#svg2 {
+    bottom: -50px;
+    right: -20px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    padding: 5% 0px;
+    z-index: 2; 
+}
+
+#title-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title > img {
+    max-width: 500px;
+}
+
+.pix {
+    display: flex;
+    flex-direction: column;   
+    gap: 20px;
+}
+
+.pix > h3 {
+    color: #5B77AA;
+}
+
+.pix > h4 {
+    color: #fff;
+}
+
+.control-pix {
+    width: 200px;
+    height: 200px;
+
+    border: #fff solid 1px;
+    border-radius: 10%;
+}
+
+@media (max-width: 1208px) {
+
+    .title {
+        display: flex;
+
+        justify-content: space-around;
+        width: 70%;
+        padding: 5% 0px;
+        z-index: 2; 
+        gap: 50px;
+    }
+
+    #title-list{
+        margin-left: 10%;
+    }
+    
+    h1{
+        font-size: 48px;
+    }
+    
+    h2{
+        font-size: 24px;
+    }
+    
+    h3{
+        font-size: 24px;
+    }
+
+    h3{
+        font-size: 18px;
+    }
+
+    #svg1 {
+        top: -120px;
+        left: -100px;
+    }
+    
+    #svg2 {
+        bottom: -100px;
+        right: -20px;
+    }
+
+    .control-pix {
+        width: 150px;
+        height: 150px;
+    
+        border: #fff solid 1px;
+        border-radius: 10%;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .title {
+        flex-direction: column;
+    }
+
+    .text > div > a > button {
+        margin: 5px;
+    }
+
+}
+
+
+
+@media (max-width: 600px) {
+
+    .title {
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+
+        z-index: 2; 
+    }
+
+    .text > div > a > button {
+        margin: 5px;
+    }
+
+}
