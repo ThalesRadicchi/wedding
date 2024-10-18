@@ -153,6 +153,10 @@ button{
     color: red;
 }
 
+#item-buttons > .textGreen {
+    color: #39D3D3; 
+}
+
 #no-priority > #item {
     border: #5B77AA solid 2px;
     border-radius: 30px;
